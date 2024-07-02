@@ -193,7 +193,7 @@ class CardDetector:
         avg_brightness = np.mean(gray)
         
         # Adjust thresholds based on average brightness
-        Cards.CARD_THRESH = int(avg_brightness * 0.7)  # Example adjustment
+        Cards.CARD_THRESH = int(avg_brightness * 0.7) 
 
     def set_num_decks(self, num_decks):
         self.num_decks = num_decks

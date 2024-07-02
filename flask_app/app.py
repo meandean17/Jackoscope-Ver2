@@ -80,7 +80,8 @@ def video_feed():
 def get_stats():
     return jsonify({
         'count': card_count,
-        'history': [card for card in card_detector.card_history if card[0] != "Unknown" and card[1] != "Unknown"] if card_detector else []
+        'history': [card for card in card_detector.card_history if card[0] != "Unknown" 
+                    and card[1] != "Unknown"] if card_detector else []
     })
 
 @app.route('/api/start_video')
